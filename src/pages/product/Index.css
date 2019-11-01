@@ -1,0 +1,11 @@
+.product-table {
+    width: 200px;
+    table-layout: fixed;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+.product-table td, th {
+    padding: 5px;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}

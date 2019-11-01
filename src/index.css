@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body, header, footer, div, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+html, body {
+    font-family: "Microsoft YaHei";
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EEE;
+}
+header {
+    position: fixed;
+    padding: 0 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #FFF;
+    background-color: #EEE;
+    z-index: 9999;
+}
+#container {
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+    z-index: 99;
+}
+#wrapper {
+    display: flex;
+    flex: 1;
+}
+footer {
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #FFF;
+    text-align: center;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.side-menu {
+    position: sticky;
+    top: 50px;
+    width: 236px;
+    height: calc(100vh - 50px);
+    border-right: 1px solid #FFF;
+    overflow-y: auto;
+}
+.side-menu > li:hover {
+    background-color: #FFF;
+    transition: .3s all;
+}
+.side-menu a.active {
+    background-color: #FFF;
+}
+.side-menu a {
+    padding: 10px 30px;
+    display: block;
+    color: #000;
+    text-decoration: none;
 }
