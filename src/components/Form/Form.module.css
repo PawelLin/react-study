@@ -1,0 +1,34 @@
+.borderError {
+    border-color: #ed4014;
+}
+.tipError {
+    position: absolute;
+    padding-left: 5px;
+    color: #ed4014;
+    font-size: 14px;
+}
+.form {
+    width: 100%;
+}
+.formItem {
+    padding-bottom: 20px;
+    display: flex;
+}
+.formItem > label {
+    margin-right: 10px;
+    padding-top: 5px;
+    width: 40px;
+    height: 32px;
+    font-size: 14px;
+    text-align: right;
+}
+.formItem > div {
+    width: 100%;
+}
+.formItem + .formItem {
+    margin-top: 10px;
+}
+.formItemInput {
+    position: relative;
+    flex: 1;
+}

@@ -1,0 +1,40 @@
+.tree {
+    font-size: 14px;
+}
+.tree li > ul {
+    margin-left: 12px;
+}
+.tree li > span {
+    margin-left: 26px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+.tree span {
+    display: inline-block;
+    margin-top: 8px;
+}
+.tree > span {
+    margin-top: 0;
+}
+.expand {
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.expand:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 6px solid black;
+    border-bottom: 4px solid transparent;
+    transition: transform .3s;
+    transform-origin: right;
+}
+.expanded:before {
+    transform: rotate(90deg) translateY(50%);
+}

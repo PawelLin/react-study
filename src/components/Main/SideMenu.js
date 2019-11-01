@@ -11,7 +11,7 @@ class SideMenu extends React.Component {
             { to: `${this.props.url}`, title: 'Home' },
             { to: `${this.props.url}/about`, title: 'About' },
             { to: `${this.props.url}/user`, title: 'User' },
-            { to: `${this.props.url}/form`, title: 'Form' }
+            { to: `${this.props.url}/form`, title: 'Form & Dialog & Tree' }
         ]
         return (
             <ul className="side-menu">
