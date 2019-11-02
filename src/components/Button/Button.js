@@ -6,7 +6,7 @@ class Button extends React.Component {
         this.props.onClick(e)
     }
     render () {
-        return <button { ...this.props } className={Style.button}>{this.props.children}</button>
+        return <button { ...this.props } className={'button ' + Style.button}>{this.props.children}</button>
     }
 }
 

@@ -43,5 +43,41 @@ export default {
                 ]
             }
         ]
-    }
+    },
+    columns: [
+        {
+            title: '姓名',
+            key: 'name'
+        },
+        {
+            title: '年龄',
+            key: 'age'
+        },
+        {
+            title: '城市',
+            key: 'city'
+        }
+    ],
+    list: [
+        {
+            name: '小明',
+            age: '13',
+            city: '哈尔滨'
+        },
+        {
+            name: '小红',
+            age: '18',
+            city: '北京'
+        },
+        {
+            name: '小虎',
+            age: '16',
+            city: '珠海市'
+        },
+        {
+            name: '小新',
+            age: '6',
+            city: '澳门'
+        }
+    ]
 }

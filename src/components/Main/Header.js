@@ -5,7 +5,7 @@ function Header (props) {
     let history = useHistory()
     return (
         <header>
-            <span>css布局</span>
+            <span>React学习</span>
             <button onClick={() => history.push('/login')}>退出登录</button>
         </header>
     )

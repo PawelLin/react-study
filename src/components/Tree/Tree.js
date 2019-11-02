@@ -13,8 +13,8 @@ class Tree extends React.Component {
             expanded: !this.state.expanded
         })
     }
-    handleSelect = () => {
-        console.log(this.props.data)
+    handleSelect = data => {
+        this.props.onSelected(data)
     }
     render () {
         const { title, children } = this.props.data
@@ -24,9 +24,9 @@ class Tree extends React.Component {
                 <ul className={this.props.notFirst ? '' : Style.tree}>
                     <span onClick={this.handleExpand} className={Style.expand + ' ' + (this.state.expanded ? Style.expanded : '')}>{title}</span>
                     { hasChildren && this.state.expanded && children.map(item => <li key={item.key}>
-                        <Tree data={item} notFirst={true} />
+                        <Tree data={item} onSelected={this.handleSelect} notFirst={true} />
                     </li>) }
-                </ul>) || <span className={Style.normal} onClick={this.handleSelect}>{title}</span>
+                </ul>) || <span className={Style.normal} onClick={() => this.handleSelect(this.props.data)}>{title}</span>
         )
     }
 }

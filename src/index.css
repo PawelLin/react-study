@@ -11,6 +11,9 @@ ul {
 html, body {
     font-family: "Microsoft YaHei";
 }
+.button + .button {
+    margin-left: 5px;
+}
 #root {
     display: flex;
     flex-direction: column;
